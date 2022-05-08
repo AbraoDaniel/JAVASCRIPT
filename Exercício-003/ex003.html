@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando DOM</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de DOM</h1>
+    <p>Aqui vai o resultado visse</p>
+    <p>Aprendendo a usar <strong>DOM</strong></p>
+    <div class="mensagem">
+        Clique em Mim
+    </div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1] 
+        /* [0] igual ao primeiro parágrafo, [1] = segundo, etc */
+
+        /*window.document.write("está escrito: " + p1.innerText)
+        document.write (p1.innerHTML)
+        var d = document.getElementById("mensagem")
+        d.innerText = "receba"*/
+        var d = window.document.querySelector("div.mensagem")
+        d.style.background = "darkgray"
+
+    </script>
+</body>
+</html>
