@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Like e Deslike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>CONTADOR DE LIKE E DESLIKE</h1>
+    </header>
+    
+    <main>
+        <section>
+            <div id="contagem">
+                <p onclick="aumentar()">
+                    <input type="button" value="Gostei"> 
+                </p>
+            
+                <p onclick="diminuir()">
+                    <input type="button" value="Não Gostei">
+                </p>
+            </div>
+
+            <div id="gostei">
+                <p>
+                   &#x1F44D ( <span id="resultado">0</span> )
+                </p>
+            </div>
+            
+            <div id="ngostei">
+                <p>
+                  &#x1F44E ( <span id="resul">0</span> )
+                </p>
+            </div>
+    
+         </section>
+    </main>
+    
+    <footer>
+        <p>&copy; DanTI</p>
+    </footer>
+        
+    <script src="script.js"></script>
+</body>
+</html>
